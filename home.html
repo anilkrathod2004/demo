@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Home Page</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial,sans-serif;
+    }
+
+    body{
+        background:#f5f7fa;
+        color:#333;
+    }
+
+    header{
+        background:#0f172a;
+        color:#fff;
+        padding:15px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:sticky;
+        top:0;
+    }
+
+    nav a{
+        color:#fff;
+        text-decoration:none;
+        margin-left:20px;
+        font-weight:bold;
+    }
+
+    nav a:hover{
+        color:#38bdf8;
+    }
+
+    .hero{
+        height:90vh;
+        background:linear-gradient(135deg,#2563eb,#1d4ed8);
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:white;
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:50px;
+        margin-bottom:20px;
+    }
+
+    .hero p{
+        font-size:20px;
+        margin-bottom:25px;
+    }
+
+    .btn{
+        padding:12px 28px;
+        background:white;
+        color:#2563eb;
+        text-decoration:none;
+        border-radius:6px;
+        font-weight:bold;
+    }
+
+    .btn:hover{
+        background:#e2e8f0;
+    }
+
+    section{
+        padding:60px 20px;
+        max-width:1100px;
+        margin:auto;
+    }
+
+    h2{
+        text-align:center;
+        margin-bottom:30px;
+        font-size:32px;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+        gap:20px;
+    }
+
+    .card{
+        background:white;
+        padding:25px;
+        border-radius:12px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:translateY(-5px);
+    }
+
+    footer{
+        background:#0f172a;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:30px;
+    }
+
+    @media(max-width:768px){
+        .hero h1{
+            font-size:36px;
+        }
+
+        nav{
+            display:none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h2>MyWebsite</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to My Homepage</h1>
+    <p>I am a Web Developer / Data Engineer / Java Developer</p>
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="grid">
+        <div class="card">HTML / CSS / JavaScript</div>
+        <div class="card">Java / Spring Boot</div>
+        <div class="card">SQL / MySQL</div>
+        <div class="card">Python / Data Engineering</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Professional responsive website using HTML CSS JS.</p>
+        </div>
+        <div class="card">
+            <h3>Data Pipeline Project</h3>
+            <p>ETL pipeline using Python and MySQL.</p>
+        </div>
+        <div class="card">
+            <h3>Java Spring App</h3>
+            <p>Backend API using Spring Boot.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Email: your@email.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 MyWebsite. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
